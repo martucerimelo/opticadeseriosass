@@ -1,0 +1,54 @@
+$mainColor: #025373;
+$secondaryColor:#3999BF;
+$terciaryColor: #45A9BF;
+$keyColor:  #1760BF;
+$alternativeColor:  #F27141;
+$position: sticky;
+$align-item: center;
+
+$widthH1:200px;
+
+
+
+@mixin botonera ($keyColor, $position, $align-item){
+    color: $secondaryColor;
+    position: $position;
+    align-items: $align-item;
+    margin: 50px;
+    
+}
+
+
+bg.botonera{}
+
+h1{
+    color: $keyColor;
+    
+}
+
+h2{
+    color: $secondaryColor;
+}
+
+h3{
+    color: $terciaryColor;
+}
+
+h4{
+    color: $keyColor;
+}
+
+h5{
+    color: $alternativeColor;
+}
+
+p{
+    color: $mainColor;
+}
+
+
+
+
+
+
+

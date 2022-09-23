@@ -1,0 +1,18 @@
+@import './variables/commons';
+@import 'contents';
+@import 'fonts';
+@import 'navbar';
+@import 'footer';
+@import 'lentes';
+@import "_index";
+
+
+
+
+@mixin botonera ($keyColor, $position, $align-item){
+    color: $secondaryColor;
+    position: $position;
+    align-items: $align-item;
+    
+}
+

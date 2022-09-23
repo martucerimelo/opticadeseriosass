@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+body {
+    background-image: url(../Imagenes/AGUA.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+
+    color: #025373;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav"
+        "header"
+        "productos"
+        "filtros"
+        "aside"
+        "footer";
+}
+
+#mainNav {
+    grid-area: nav
+}
+
+#header {
+    grid-area: header;
+}
+
+#filtros {
+
+    grid-area: filtros;
+
+}
+
+#productos {
+    grid-area: productos;
+    color: #025373;
+}
+
+#aside {
+    grid-area: aside;
+    background-color: #3999BF;
+    padding: 20px 0;
+
+
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.botonera {
+    background-color: #3999BF;
+    position: sticky;
+    top: 0;
+    padding: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width:768px) {
+
+    .contenedor {
+        grid-template-columns: 30vw 70vw;
+        grid-template-areas:
+            "nav nav"
+            "header header"
+            "filtros productos"
+            "aside aside"
+            "footer footer";
+
+    }
+
+    #productos .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #productos .galeria figure {
+        width: 90%;
+    }
+
+    #aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .contenedor {
+        grid-template-columns: 20vw 70vw 10vw;
+        grid-template-areas:
+            "nav nav nav"
+            "header header header"
+            "filtros productos aside"
+            "footer footer footer";
+    }
+
+    #aside {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #aside img {
+        width: 70%;
+
+    }
+
+    #productos .galeria figure {
+        width: 80%;
+    }
+
+    .botonera {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .botonera img {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+
+        #productos .galeria {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #productos .galeria figure {
+            width: 30%;
+        }
+    }
+}

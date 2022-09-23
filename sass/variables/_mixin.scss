@@ -1,0 +1,8 @@
+@mixin flex($dire, $justify, $align, $marginb) {
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;
+    margin-bottom:20px ;
+    
+}

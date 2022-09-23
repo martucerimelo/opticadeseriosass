@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Serif+Pro:wght@200;400&display=swap");
+h1 {
+  color: #1760BF;
+}
+
+h2 {
+  color: #3999BF;
+}
+
+h3 {
+  color: #45A9BF;
+}
+
+h4 {
+  color: #1760BF;
+}
+
+h5 {
+  color: #F27141;
+}
+
+p {
+  color: #025373;
+}
+
+body {
+  background-color: #1760BF;
+}/*# sourceMappingURL=style.css.map */
