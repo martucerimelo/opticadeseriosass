@@ -1,54 +1,115 @@
 $mainColor: #025373;
-$secondaryColor:#3999BF;
+$secondaryColor: #3999BF;
 $terciaryColor: #45A9BF;
-$keyColor:  #1760BF;
-$alternativeColor:  #F27141;
+$anotherColor: #80DDF2;
+$keyColor: #1760BF;
+$fourColor: #eff0f2;
+$alternativeColor: #F27141;
 $position: sticky;
+$textMd: 1.2rem;
+$textXl: 2.2rem;
 $align-item: center;
+$justifycon: space-between;
+$marginb:15px;
+$textMd: 1.2rem;
+$textLg: 1.5rem;
+$textSm: 1rem;
+$textXs: 0.8rem;
+$textXl: 2.2rem;
+$textXxl:3rem;
 
-$widthH1:200px;
+$textBold:600;
+$textRegular:400;
+$textThin:200;
+
+
+$widthH1: 200px;
 
 
 
-@mixin botonera ($keyColor, $position, $align-item){
+@mixin botonera ($keyColor, $position, $align-item) {
     color: $secondaryColor;
     position: $position;
     align-items: $align-item;
     margin: 50px;
-    
+
 }
 
-
-bg.botonera{}
-
-h1{
-    color: $keyColor;
-    
-}
-
-h2{
-    color: $secondaryColor;
-}
-
-h3{
-    color: $terciaryColor;
-}
-
-h4{
-    color: $keyColor;
-}
-
-h5{
-    color: $alternativeColor;
-}
-
-p{
+.g-col-2 h1 {
+    margin-bottom: $marginb;
+    font-size: $textXs;
     color: $mainColor;
 }
 
 
+@mixin cardtitle  ($mainFont, $textLg,$secondaryColor,$justifycon){
+    font-family: $mainFont;
+    font-size: $textLg;
+    color: $secondaryColor;
+    justify-content: $justifycon;
+    
+}
+
+
+.card-textlentes{
+    @include cardtitle('Source Serif Pro', serif,1.2rem, #496ede )
+}
+
+
+
+@mixin flex ($dis, $direc, $just, $align){
+    
+}
+
+
+
+h1 {
+    color: $keyColor;
+
+}
+
+h2 {
+    color: $secondaryColor;
+}
+
+h3 {
+    color: $terciaryColor;
+}
+
+h4 {
+    color: $keyColor;
+}
+
+h5 {
+    color: $alternativeColor;
+}
+
+p {
+    color: $mainColor;
+}
+
+main {
+    color: $anotherColor;
+    font-family: $anotherColor;
+    font-size: $textMd;
+    line-height: $textXl;
+}
 
 
 
 
+#botonera ul li a:visited {
+    color: $fourColor
+}
 
+#botonera ul li a:active {
+    color: black
+}
+
+
+
+body {
+    background-image: url(../Imagenes/AGUA.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}

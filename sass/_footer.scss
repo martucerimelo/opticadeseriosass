@@ -1,3 +1,14 @@
-body{
-   
+.pie {
+    text-align: $align;
+    padding-bottom: 6px 20px;
+}
+
+.pie__icon--sm {
+    width: 35px;
+}
+
+.pie__titulo--md {
+    font-size: 2rem;
+    margin-bottom: auto;
+    font-size: 1rem;
 }

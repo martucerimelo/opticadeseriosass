@@ -1,3 +1,20 @@
-body{
-    background-color: $keyColor;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondaryColor;
+    color: $fourColor;
+
+    ul {
+        color: $fourColor;
+
+    }
+
+    li {
+        color: $fourColor;
+    }
+
+    a {
+        color: $fourColor ;
+    }
 }

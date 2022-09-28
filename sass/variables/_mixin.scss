@@ -6,3 +6,10 @@
     margin-bottom:20px ;
     
 }
+
+@mixin botonera ($keyColor, $position, $align-item) {
+    color: $secondaryColor;
+    position: $position;
+    align-items: $align-item;
+
+}
