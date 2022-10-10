@@ -37,12 +37,64 @@ main section{
     
 }
 
-.header-img {
-    width: 150px;
-    
+.historia{
+    font-size: $textLg;
+    font-family: $secondaryFont;
+
 }
 
-.carousel img {
-    width: 1200px;
-    margin: auto
+
+
+.historia h1{
+    font-size: $textXxl;
+    font-family: $secondaryFont;
+    color: $terciaryColor;
+
 }
+
+.historia h2{
+    font-size: $textXl;
+    font-family: $mainFont;
+}
+
+.historia p{
+    font-family: $mainFont;
+}
+
+.historia-flex{
+    display: $flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.agudeza-title{
+    color: $secondaryColor;
+}
+
+.img-agudeza{
+    width: 32%;
+    text-align: center;
+    justify-content: center;
+    float: inline-start;
+}
+
+.container-info{
+    display: $flex;
+}
+
+
+.img-anuncios{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.historia h1 h2{
+    font-size: $textXxl;
+    font-family: $mainFont;
+    color: $secondaryColor;
+
+   
+
+    }

@@ -1,0 +1,49 @@
+$flex: flex;
+$width: 32%;
+$position:relative;
+$mg: auto;
+
+
+
+
+
+.armazones {
+    display: $flex;
+    margin-top: 100px;
+    padding: 25px;
+    color: hotpink;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.karun {
+    padding-left: 18px;
+}
+
+.armazones img {
+    position:$p-relative;
+    width: $width;
+  
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    
+    top: 0;
+}
+
+.armazones img:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+
+}
+
+.text-armazones h1{
+    color: #ADD9D9;
+    font-size: $textXxl;
+    font-family: $mainFont;
+}

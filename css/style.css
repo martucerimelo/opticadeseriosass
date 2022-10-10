@@ -11,7 +11,7 @@
   justify-content: #496ede; }
 
 h1 {
-  color: #1760BF; }
+  color: #008CD4; }
 
 h2 {
   color: #3999BF; }
@@ -49,7 +49,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3999BF;
+  background-color: #F2C9E7;
   color: #eff0f2; }
   nav ul {
     color: #eff0f2; }
@@ -58,13 +58,24 @@ nav {
   nav a {
     color: #eff0f2; }
 
+.navbar {
+  background-color: #D95284; }
+
+.body {
+  background-color: grey; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
 body {
   background-image: url(../Imagenes/AGUA.jpg);
   background-repeat: repeat;
   background-attachment: fixed; }
 
 .anuncio__box--white {
-  text-align: center; }
+  text-align: center;
+  position: sticky; }
 
 main section {
   color: #80DDF2; }
@@ -82,51 +93,60 @@ main section {
   font-size: 3rem;
   transition: transform 2s; }
 
-.h1-1 .transform:hover {
+.h2-1 .transform:hover {
   transform: translateY(20px); }
 
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column; }
-  .contenedor {
-    grid-template-columns: 30vw 70vw;
-    grid-template-areas: "numeros numeros" "nav nav" "header header" "filtros productos" "ingresos ingresos" "aside aside" "footer footer"; }
-  #productos .galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  #productos .galeria figure {
-    width: 90%; }
-  #aside {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; } }
+.h2 {
+  color: #008CD4;
+  margin-bottom: 5px; }
 
-@media screen and (max-width: 1024px) {
-  .contenedor {
-    grid-template-columns: 20vw 70vw 10vw;
-    grid-template-areas: "numeros numeros numeros" "nav nav nav" "header header header" "filtros productos aside" "footer footer footer"; }
-  #aside {
-    flex-direction: column;
-    align-items: flex-start; }
-  #aside img {
-    width: 70%; }
-  #productos .galeria figure {
-    width: 80%; }
-  .botonera {
-    flex-direction: row;
-    justify-content: space-between; }
-  .botonera img {
-    margin-bottom: 0; }
-  .anuncio__box--white {
-    text-align: center;
-    background-color: white;
-    color: darkgray;
-    font-size: 1.5rem;
-    padding: 4px 0;
-    position: sticky;
-    top: 0;
-    width: 100%; } }
+.col-4 img:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden; }
+
+.card {
+  overflow: hidden; }
+
+.product-item {
+  height: auto;
+  width: auto; }
+
+.card-info-img {
+  width: 100%;
+  border-radius: 4px; }
+
+.armazones-text {
+  max-width: 400px;
+  text-align: center; }
+
+.kodak-title h5 {
+  color: white; }
+
+.kodak-img {
+  width: 80%;
+  margin-left: 150px; }
+
+.caorusel img {
+  width: 1200px;
+  margin: auto; }
+
+.text-center {
+  color: #F28DBC;
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.5rem; }
+
+.alert-text {
+  color: #F28DBC;
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.2rem; }
+
+.text-title h2 {
+  color: #ADD9D9;
+  font-size: 3rem; }
 
 nav {
   display: flex;
@@ -148,12 +168,164 @@ nav {
 main section {
   color: #80DDF2; }
 
-.header-img {
-  width: 150px; }
+.historia {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif; }
 
-.carousel img {
-  width: 1200px;
-  margin: auto; }
+.historia h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #45A9BF; }
+
+.historia h2 {
+  font-size: 2.2rem;
+  font-family: "Source Serif Pro", serif; }
+
+.historia p {
+  font-family: "Source Serif Pro", serif; }
+
+.historia-flex {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.agudeza-title {
+  color: #3999BF; }
+
+.img-agudeza {
+  width: 32%;
+  text-align: center;
+  justify-content: center;
+  float: inline-start; }
+
+.container-info {
+  display: flex; }
+
+.img-anuncios {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; }
+
+.historia h1 h2 {
+  font-size: 3rem;
+  font-family: "Source Serif Pro", serif;
+  color: #3999BF; }
+
+.card-img-top img {
+  width: 32%; }
+
+.gallery-flx {
+  font-family: "Poppins", sans-serif; }
+
+.gallery-flx h1 {
+  text-align: center;
+  margin: 20px 15px 0px;
+  font-weight: 300; }
+
+.linea {
+  border-top: 5px solid cornflowerblue;
+  margin-bottom: 40px; }
+
+.conteiner-imagen {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px; }
+
+.conteiner-imagen .imagenes {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px blue; }
+
+.imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden; }
+
+.imagenes:hover {
+  cursor: pointer;
+  transform: translate(-3dg); }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 118, 192, 0.781);
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+  overflow: hidden; }
+
+.overlay h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%); }
+
+.imagenes:hover .overlay {
+  height: 100%;
+  cursor: pointer; }
+
+@media screen and (max-width: 1000px) {
+  .conteiner-imagen {
+    width: 95%; } }
+
+@media screen and (max-width: 700px) {
+  .conteiner-imagen {
+    width: 90%; }
+  .conteiner-imagen .imagenes {
+    width: 48%; } }
+
+.armazones {
+  display: flex;
+  margin-top: 100px;
+  padding: 25px;
+  color: hotpink;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
+.karun {
+  padding-left: 18px; }
+
+.armazones img {
+  position: relative;
+  width: 32%;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 500ms ease-out;
+  top: 0; }
+
+.armazones img:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+.text-armazones h1 {
+  color: #ADD9D9;
+  font-size: 3rem;
+  font-family: "Source Serif Pro", serif; }
+
+.text h2 {
+  color: #025373;
+  font-family: "Source Serif Pro", serif;
+  animation: nE 5s infinite; }
+
+@keyframes nE {
+  0%, 35%, 45%, 65%, 100% {
+    text-shadow: #eff0f2 0 0 12px, #3999BF 0 0 24px, #3999BF 0 0 36px; }
+  40%, 60% {
+    text-shadow: none; } }
 
 .wrap {
   max-width: 1110px;
@@ -175,18 +347,41 @@ main section {
   background-color: #c7c7c7;
   margin: 20px 0; }
 
+.wrap {
+  max-width: 1110px;
+  width: 90%;
+  margin: auto; }
+
+.wrap h1 {
+  font-size: 3rem;
+  font-family: "Source Serif Pro", serif;
+  color: #3999BF; }
+
+.wrap > h1 {
+  color: #3999BF;
+  font-weight: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px 0px; }
+
+.wrap > h1::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #c7c7c7;
+  margin: 20px 0; }
+
 .categoria {
   display: flex; }
 
 .category_list {
   display: flex;
-  flex-direction: column;
-  width: 18%; }
+  flex-direction: column; }
 
 .category_list .category_item {
   display: block;
-  width: 90%;
-  padding: 15px 0;
+  padding: 15px 10px;
   margin-bottom: 20px;
   background-color: lightblue;
   text-align: center;
@@ -206,16 +401,59 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: flex-start; }
+  align-self: flex-start;
+  height: 250px; }
 
 .product-list .product-item img {
-  width: 100%; }
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
 
 .product-list .product-item a {
   display: block;
   width: 100%;
   padding: 8px 0;
   background-color: white; }
+
+.card img:hover {
+  transform: translateY(-3%);
+  box-shadow: rgba(0, 0, 0, 0.22); }
+
+.alert-text h1 {
+  color: #025373;
+  font-size: 1.2rem;
+  font-family: "Source Serif Pro", serif; }
+
+.alert {
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 5px; }
+
+.titulo-lentes h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #F27141; }
+
+.order-last h2 {
+  font-size: 2.2rem;
+  font-family: "Source Serif Pro", serif;
+  color: #025373; }
+
+.col h3 {
+  font-size: 2.2rem;
+  font-family: "Source Serif Pro", serif;
+  color: #025373; }
+
+.order-first h4 {
+  font-size: 2.2rem;
+  font-family: "Source Serif Pro", serif;
+  color: #025373; }
+
+.col p {
+  font-size: 1.2rem;
+  font-family: "Source Serif Pro", serif;
+  color: #3999BF; }
 
 .pie {
   text-align: center;
@@ -234,3 +472,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #3999BF; }
+
+.carousel {
+  height: 800px;
+  margin-bottom: 20px; }
+
+.text h2 {
+  color: #025373;
+  font-family: "Source Serif Pro", serif;
+  animation: nE 5s infinite; }

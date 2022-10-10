@@ -6,9 +6,19 @@ $fourColor: #eff0f2;
 $alternativeColor: #F27141;
 $anothercolor: #80DDF2;
 $align: center;
+$colorblue:#008CD4;
+$flex: flex;
+$width: 32%;
+$p-relative:relative;
+$mg: auto;
 
 
-@mixin botonera ($keyColor, $position, $align-item) {
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@mixin botonera ($colorblue, $position, $align-item) {
     color: $secondaryColor;
     position: $position;
     align-items: $align-item;
@@ -19,11 +29,13 @@ body {
     background-image: url(../Imagenes/AGUA.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
+  
 
 }
 
 .anuncio__box--white {
     text-align: $align;
+    position: sticky;
 }
 
 
@@ -39,7 +51,7 @@ main section {
 
 .carousel img {
     width: 1200px;
-    margin: auto
+    margin: auto;
 }
 
 
@@ -50,90 +62,79 @@ main section {
     transition: transform 2s;
 }
 
-.h1-1 .transform:hover {
+.h2-1 .transform:hover {
     transform: translateY(20px);
 }
 
-@media screen and (max-width:768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .contenedor {
-        grid-template-columns: 30vw 70vw;
-        grid-template-areas:
-            "numeros numeros"
-            "nav nav"
-            "header header"
-            "filtros productos"
-            "ingresos ingresos"
-            "aside aside"
-            "footer footer";
-
-    }
-
-    #productos .galeria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #productos .galeria figure {
-        width: 90%;
-    }
-
-    #aside {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+.h2 {
+   color: $colorblue ;
+   margin-bottom: 5px;
 
 }
 
-@media screen and (max-width: 1024px) {
+ .col-4 img:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+} 
 
-    .contenedor {
-        grid-template-columns: 20vw 70vw 10vw;
-        grid-template-areas:
-            "numeros numeros numeros"
-            "nav nav nav"
-            "header header header"
-            "filtros productos aside"
-            "footer footer footer";
-    }
+.card-img-top{
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
 
-    #aside {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.card{
+    overflow: hidden;
+}
 
-    #aside img {
-        width: 70%;
 
-    }
+.product-item{
+    height: auto;
+    width: auto;
+  }
 
-    #productos .galeria figure {
-        width: 80%;
-    }
 
-    .botonera {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .botonera img {
-        margin-bottom: 0;
-    }
+  .card-info-img {
+    width: 100%;
+    border-radius: 4px;
 
-        .anuncio__box--white {
-            text-align: center;
-            background-color: white;
-            color: darkgray;
-            font-size: 1.5rem;
-            padding: 4px 0;
-            position: sticky;
-            top: 0;
-            width: 100%;
-           }
-    }
+}
 
+.armazones-text{
+    max-width: 400px;
+    text-align: center;
+
+}
+
+.kodak-title h5{
+    color: white;
+}
+
+.kodak-img{
+    width: 80%;
+margin-left: 150px;
+ 
+}
+
+.caorusel img{
+    width: 1200px;
+    margin: auto;
+}
+
+
+.text-center{
+    color: #F28DBC;
+    font-family: $mainFont;
+    font-size: $textLg;
+}
+
+.alert-text {
+    color: #F28DBC;
+    font-family: $mainFont;
+    font-size: $textMd;
+}
+
+.text-title h2{
+    color: #ADD9D9;
+    font-size: $textXxl;
+}

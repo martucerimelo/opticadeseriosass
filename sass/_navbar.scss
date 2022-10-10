@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $secondaryColor;
+    background-color: #F2C9E7;
     color: $fourColor;
 
     ul {
@@ -17,4 +17,12 @@ nav {
     a {
         color: $fourColor ;
     }
+}
+
+.navbar{
+    background-color: #D95284;
+}
+
+.body{
+    background-color: grey;
 }

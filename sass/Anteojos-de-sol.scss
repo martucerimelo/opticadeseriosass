@@ -1,0 +1,93 @@
+.gallery-flx{
+    font-family: $secondaryFont;
+}
+
+.gallery-flx h1{
+    text-align: center;
+    margin: 20px 15px 0px;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid cornflowerblue;
+    margin-bottom: 40px;
+}
+
+.conteiner-imagen{
+    display: $flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.conteiner-imagen .imagenes{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba($color: blue, $alpha: 1.0);
+}
+
+
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.imagenes:hover{
+    cursor: pointer;
+    transform: translate(-3dg);
+}
+
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0,118,192, 0.781) ;
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+    
+}
+
+.overlay h2{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+
+.imagenes:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .conteiner-imagen{
+        width: 95%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 700px){
+    .conteiner-imagen{
+        width: 90%;
+    }
+    .conteiner-imagen .imagenes{
+        width: 48%;
+    }
+    
+}

@@ -4,6 +4,10 @@
 @import 'navbar';
 @import "index";
 @import "Nosotros";
+@import "Anteojos";
+@import "Anteojos-de-sol";
+@import "armazones-recetados";
+@import "mujer";
 @import "Lentes-de-contacto";
 @import 'footer';
 
@@ -23,3 +27,16 @@ nav {
     align-items: center;
     background-color: #3999BF;
 }
+
+.carousel {
+    height: 800px;
+    margin-bottom: 20px;
+}
+
+.text h2{
+  color: $mainColor;
+  font-family: $mainFont;
+  animation: nE 5s infinite;
+}
+
+
