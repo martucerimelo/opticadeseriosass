@@ -45,32 +45,41 @@ main section{
 
 
 
-.historia h1{
+.historia h1 {
     font-size: $textXxl;
     font-family: $secondaryFont;
     color: $terciaryColor;
 
 }
 
-.historia h2{
+.nuestra-historia h2{
     font-size: $textXl;
     font-family: $mainFont;
 }
 
-.historia p{
+.nuestra-historia p{
     font-family: $mainFont;
+    color: #45A9BF;
 }
 
 .historia-flex{
     display: $flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 
+}
+
+
+.container-historia{
+    display: flex;
+    justify-content: space-between;
 }
 
 .agudeza-title{
     color: $secondaryColor;
 }
+
+
 
 .img-agudeza{
     width: 32%;
@@ -98,3 +107,59 @@ main section{
    
 
     }
+
+
+    .armazones{
+        display: $flex;
+        justify-content: space-between;
+    }
+
+    .accordion-button button{
+        background-color: aliceblue;
+    }
+
+    .accordion-body p{
+        color: #F28DBC;
+        font-size: $textMd;
+        font-family: $secondaryFont;
+    }
+
+    .mb-1{
+        color: white;
+    }
+
+    .mb-1  .ojo-seco p{
+        color: black;
+    }
+
+
+
+    .conteiner-card{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+
+    @media screen and ( max-width: 1024px) {
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3999BF; }
+            nav ul {
+              color: #eff0f2; }
+            nav li {
+              color: #eff0f2; }
+        }
+        .conteiner-card{
+            display: flex;
+            direction: column;
+            justify-content: space-between;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    

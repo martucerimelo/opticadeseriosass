@@ -1,15 +1,34 @@
-@mixin flex($dire, $justify, $align, $marginb) {
-    display: flex;
-    flex-direction: $dire;
-    justify-content: $justify;
-    align-items: $align;
-    margin-bottom:20px ;
+@mixin flex( $justify, $marginb, $marginl, $marginr) {
     
-}
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 
+}
 @mixin botonera ($keyColor, $position, $align-item) {
     color: $secondaryColor;
     position: $position;
     align-items: $align-item;
 
 }
+
+
+@mixin listitem ($disp, $padding, $mb,$bg, $textal, $textdec) {
+    display: block;
+    padding:15px 10px;
+    margin-bottom: 20px;
+    background-color: lightblue; 
+    text-align: center;
+    text-decoration: none;
+
+}
+    
+
+
+
+
+
+
+

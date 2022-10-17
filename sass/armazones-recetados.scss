@@ -23,6 +23,11 @@ $mg: auto;
     padding-left: 18px;
 }
 
+
+
+
+
+
 .armazones img {
     position:$p-relative;
     width: $width;
@@ -42,8 +47,133 @@ $mg: auto;
 
 }
 
-.text-armazones h1{
+.transform h1{
     color: #ADD9D9;
     font-size: $textXxl;
     font-family: $mainFont;
 }
+
+@media screen and (max-width:768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .contenedor {
+        grid-template-columns: 30vw 70vw;
+        grid-template-areas:
+            "numeros numeros"
+            "nav nav"
+            "header header"
+            "filtros productos"
+            "ingresos ingresos"
+            "aside aside"
+            "footer footer";
+
+    }
+
+    #productos .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #productos .galeria figure {
+        width: 90%;
+    }
+
+    #aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    nav {
+        flex-direction: column;
+        float: none;
+        width: 100%;
+    }
+
+    .alert-text {
+        overflow: hidden;
+    }
+
+
+
+    @media screen and (max-width: 1024px) {
+
+        .contenedor {
+            grid-template-columns: 20vw 70vw 10vw;
+            grid-template-areas:
+                "numeros numeros numeros"
+                "nav nav nav"
+                "header header header"
+                "filtros productos aside"
+                "footer footer footer";
+        }
+
+    }
+
+    #aside {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #aside img {
+        width: 70%;
+
+    }
+
+    #productos .galeria figure {
+        width: 80%;
+    }
+
+    .botonera {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .botonera img {
+        margin-bottom: 0;
+    }
+
+    .anuncio__box--white {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 4px 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+
+
+    @media screen and (max-widht:600px) {
+        nav {
+            float: none;
+            width: 100%;
+            flex-direction: column;
+            margin-right: 20px;
+
+        }
+    }
+
+}
+
+
+@media (min-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+
+    .conteiner-imagen {
+        width: 95%; }
+
+        .conteiner-imagen .imagenes {
+            width: 48%; }
+         }
+        

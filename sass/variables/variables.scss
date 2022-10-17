@@ -1,0 +1,26 @@
+$colors: (
+    "secondaryColor": $secondaryColor
+    "terciaryColor": $terciaryColor
+    "KeyColor": $keyColor
+    "fourColor": $fourColor
+    "alternativeColor": $alternativecolor
+    "anothercolor": $anothercolor
+    "colorblue": $colorblue
+
+)
+
+
+
+
+
+$mainColor: #025373; 
+$secondaryColor: #3999BF;
+$terciaryColor: #45A9BF;
+$keyColor: #1760BF;
+$fourColor: #eff0f2;
+$alternativeColor: #F27141;
+$anothercolor: #80DDF2;
+$colorblue:#008CD4;
+
+
+@debug map-get($colors , $secondaryColor )
