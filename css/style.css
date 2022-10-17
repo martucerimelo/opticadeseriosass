@@ -110,7 +110,8 @@ main section {
     color: #eff0f2; }
 
 #botonera {
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 .transform:hover {
   transform: translateX(20px);
@@ -147,13 +148,6 @@ main section {
 .armazones-text {
   max-width: 400px;
   text-align: center; }
-
-.kodak-title h5 {
-  color: white; }
-
-.kodak-img {
-  width: 80%;
-  margin-left: 150px; }
 
 .caorusel img {
   width: 1200px;
