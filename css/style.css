@@ -888,6 +888,10 @@ nav {
   font-family: "Source Serif Pro", serif;
   animation: nE 5s infinite; }
 
+.mapa {
+  width: 300px;
+  height: 300px; }
+
 @media (max-width: 1200px) {
   nav {
     flex-direction: column; }
@@ -925,12 +929,12 @@ nav {
   .alert-text {
     overflow: hidden; } }
 
-@media screen and (min-width: 1200px) and (max-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1200px) and (max-width: 1024px) {
   .contenedor {
     grid-template-columns: 20vw 70vw 10vw;
     grid-template-areas: "numeros numeros numeros" "nav nav nav" "header header header" "filtros productos aside" "footer footer footer"; } }
 
-@media screen and (min-width: 1200px) and (max-width: 768px) {
+@media (min-width: 1200px) {
   #aside {
     flex-direction: column;
     align-items: flex-start; }
