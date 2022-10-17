@@ -109,6 +109,9 @@ main section {
   .nav a {
     color: #eff0f2; }
 
+#botonera {
+  color: white; }
+
 .transform:hover {
   transform: translateX(20px);
   cursor: pointer;
@@ -878,6 +881,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #D95284; }
+  nav ul li a {
+    color: white; }
 
 .carousel {
   height: 800px;
